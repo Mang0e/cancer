@@ -1,0 +1,74 @@
+<marquee>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Seizure Lenny</title>
+    </head>
+<audio autoplay loop>
+  <source src="sound/ampb00ty.mp3" type="audio/mpeg">
+</audio>
+<div align="center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+
+
+<html style="background: rgb(36, 65, 67);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><style>
+html,body,table,tr,td {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+td {
+	font-size: 15em;
+}
+span {
+	position: relative;
+}
+</style></head><body><table><tbody><tr><td>
+<span style="color: rgb(236, 157, 0); padding: 0.00290433em; top: -0.0292553em;">(</span><span style="color: rgb(183, 153, 0); padding: 0.0192706em; top: 0.0438936em;"> </span><span style="color: rgb(151, 151, 0); padding: 0.0278456em; top: 0.0432726em;">͡</span><span style="color: rgb(142, 170, 0); padding: 0.0237534em; top: -0.0268684em;">°</span><span style="color: rgb(180, 255, 29); padding: 0.0426122em; top: 0.0445787em;"> </span><span style="color: rgb(159, 255, 63); padding: 0.0132799em; top: 0.037416em;">͜</span><span style="color: rgb(156, 255, 106); padding: 0.0453188em; top: -0.0359413em;">ʖ</span><span style="color: rgb(126, 255, 100); padding: 0.026183em; top: 0.0175364em;"> </span><span style="color: rgb(70, 255, 70); padding: 0.0482045em; top: 0.00907112em;">͡</span><span style="color: rgb(13, 255, 54); padding: 0.0213487em; top: -0.00524597em;">°</span><span style="color: rgb(0, 196, 65); padding: 0.000788646em; top: -0.0231254em;">)</span>
+</td></tr></tbody></table><script>
+var c = 0;
+var cs = 10;
+var bh = 0;
+function run()
+{
+	c = c + 10;
+	if (c > 360)
+	{
+		c -= 360;
+		bh = Math.random() * 360;
+	}
+	var o = document.getElementsByTagName('span');
+	for (var n = 0; n < o.length; n++) //>
+	{
+		o[n].style.color = 'hsl(' + (c+cs*n) + ',100%,' + (Math.random()*50+25) + '%)';
+		o[n].style.padding = (Math.random()*0.05) + 'em';
+		o[n].style.top = (Math.random()*0.1-0.05) + 'em';
+	}
+	var l = Math.abs(c - 180) / 50;
+	l += Math.random() * 50;
+	document.getElementsByTagName('html')[0].style.background = 'hsl(' + bh + ',30%,' + l + '%)';
+	setTimeout('run();', 10);
+}
+run();
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+</marquee>
