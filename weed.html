@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html style="background: rgb(36, 65, 67);"><head><title>420</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><style>
+html,body,table,tr,td {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+td {
+	font-size: 15em;
+}
+span {
+	position: relative;
+}
+</style>
+<script>
+var c = 0;
+var cs = 10;
+var bh = 0;
+function run()
+{
+	c = c + 10;
+	if (c > 360)
+	{
+		c -= 360;
+		bh = Math.random() * 360;
+	}
+	var o = document.getElementsByTagName('span');
+	for (var n = 0; n < o.length; n++) //>
+	{
+		o[n].style.color = 'hsl(' + (c+cs*n) + ',100%,' + (Math.random()*50+25) + '%)';
+		o[n].style.padding = (Math.random()*0.05) + 'em';
+		o[n].style.top = (Math.random()*0.1-0.05) + 'em';
+	}
+	var l = Math.abs(c - 180) / 50;
+	l += Math.random() * 50;
+	document.getElementsByTagName('html')[0].style.background = 'hsl(' + bh + ',30%,' + l + '%)';
+	setTimeout('run();', 10);
+}
+run();
+</script>
+<audio autoplay loop>
+  <source src="sound/amperryday.mp3" type="audio/mpeg">
+</audio>
+<image src="images/fastsnoop.gif" height="100%">
+<image src="images/reverse-fastsnoop.gif" height="100%">
+</html>
